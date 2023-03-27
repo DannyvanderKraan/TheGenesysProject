@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TheGenesysProject.Manager.API.AbilityMaintain.Models;
+using TheGenesysProject.Manager.API.AbilityMaintain.Application.Repositories;
+using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Models;
 using TheGenesysProject.Manager.API.AbilityMaintain.Repositories.Entities;
 using TheGenesysProject.Manager.API.Shared.Repositories;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Repositories
+namespace TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories
 {
     internal class TraitTableRepository : StorageTableRepositoryBase, IAbilityTableRepository
     {

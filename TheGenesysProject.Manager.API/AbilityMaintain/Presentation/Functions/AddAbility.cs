@@ -9,7 +9,7 @@ using TheGenesysProject.Manager.API.AbilityMaintain.Models;
 using TheGenesysProject.Manager.API.AbilityMaintain.Repositories;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Functions
+namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
 {
     internal class AddAbility
     {

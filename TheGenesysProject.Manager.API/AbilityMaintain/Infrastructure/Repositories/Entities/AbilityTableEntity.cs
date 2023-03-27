@@ -2,10 +2,10 @@
 using Azure.Data.Tables;
 using System;
 using System.ComponentModel;
-using TheGenesysProject.Manager.API.AbilityMaintain.Models;
+using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Models;
 using TheGenesysProject.Manager.Shared.Constants;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Repositories.Entities
+namespace TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories.Entities
 {
     internal class AbilityTableEntity : ITableEntity
     {
@@ -16,7 +16,7 @@ namespace TheGenesysProject.Manager.API.AbilityMaintain.Repositories.Entities
             Age = ability.Age.ToString();
             Name = ability.Name;
             Description = ability.Description;
-       }
+        }
 
         public string PartitionKey { get; set; }
         public string RowKey { get; set; }
