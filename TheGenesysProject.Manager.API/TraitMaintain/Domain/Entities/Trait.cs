@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using TheGenesysProject.Manager.API.AbilityMaintain.Models.Validations;
-using TheGenesysProject.Manager.API.Shared.Models;
+using TheGenesysProject.Manager.API.Shared.Domain;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
-namespace TheGenesysProject.Manager.API.TraitMaintain.Models
+namespace TheGenesysProject.Manager.API.TraitMaintain.Domain.Entities
 {
     internal class Trait : DomainModelBase
     {

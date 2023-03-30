@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Domain.Models.Validations
+namespace TheGenesysProject.Manager.API.AbilityMaintain.Domain.Validations
 {
     internal class TheGenesysProjectValidationResult
     {

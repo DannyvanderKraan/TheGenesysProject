@@ -9,7 +9,7 @@ using TheGenesysProject.Manager.API.TraitMaintain.Models;
 using TheGenesysProject.Manager.API.TraitMaintain.Repositories;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Functions
+namespace TheGenesysProject.Manager.API.TraitMaintain.Presentation
 {
     internal class AddTrait
     {

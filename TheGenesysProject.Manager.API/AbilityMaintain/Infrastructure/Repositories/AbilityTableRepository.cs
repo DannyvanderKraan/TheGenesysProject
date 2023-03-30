@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TheGenesysProject.Manager.API.AbilityMaintain.Application.Repositories;
-using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Models;
+using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Entities;
 using TheGenesysProject.Manager.API.AbilityMaintain.Repositories.Entities;
-using TheGenesysProject.Manager.API.Shared.Repositories;
+using TheGenesysProject.Manager.API.Shared.Infrastructure;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories
 {
-    internal class TraitTableRepository : StorageTableRepositoryBase, IAbilityTableRepository
+    internal class TraitTableRepository : StorageTableRepositoryBase, IAbilityRepository
     {
         public TraitTableRepository(IAzureClientFactory<TableServiceClient> clientFactory) : base(clientFactory)
         {

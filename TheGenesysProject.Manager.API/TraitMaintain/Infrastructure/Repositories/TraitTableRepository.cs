@@ -2,13 +2,14 @@
 using Microsoft.Extensions.Azure;
 using System.Linq;
 using System.Threading.Tasks;
-using TheGenesysProject.Manager.API.Shared.Repositories;
-using TheGenesysProject.Manager.API.TraitMaintain.Models;
+using TheGenesysProject.Manager.API.Shared.Infrastructure;
+using TheGenesysProject.Manager.API.TraitMaintain.Application.Repositories;
+using TheGenesysProject.Manager.API.TraitMaintain.Domain.Entities;
 using TheGenesysProject.Manager.API.TraitMaintain.Repositories.Entities;
 
-namespace TheGenesysProject.Manager.API.TraitMaintain.Repositories
+namespace TheGenesysProject.Manager.API.TraitMaintain.Infrastructure.Repositories
 {
-    internal class TraitTableRepository : StorageTableRepositoryBase, ITraitTableRepository
+    internal class TraitTableRepository : StorageTableRepositoryBase, ITraitRepository
     {
         public TraitTableRepository(IAzureClientFactory<TableServiceClient> clientFactory) : base(clientFactory)
         {

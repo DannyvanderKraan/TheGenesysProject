@@ -4,7 +4,7 @@ using System;
 using System.Net.Http;
 using static TheGenesysProject.Manager.API.Shared.Settings.AzureClientFactoryNames;
 
-namespace TheGenesysProject.Manager.API.Shared.Repositories
+namespace TheGenesysProject.Manager.API.Shared.Infrastructure
 {
     internal abstract class StorageTableRepositoryBase
     {

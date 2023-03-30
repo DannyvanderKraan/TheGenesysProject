@@ -1,9 +1,9 @@
 ﻿using Azure;
 using Azure.Data.Tables;
 using System;
-using TheGenesysProject.Manager.API.TraitMaintain.Models;
+using TheGenesysProject.Manager.API.TraitMaintain.Domain.Entities;
 
-namespace TheGenesysProject.Manager.API.TraitMaintain.Repositories.Entities
+namespace TheGenesysProject.Manager.API.TraitMaintain.Infrastructure.Repositories.Entities
 {
     internal class TraitTableEntity : ITableEntity
     {
@@ -14,7 +14,7 @@ namespace TheGenesysProject.Manager.API.TraitMaintain.Repositories.Entities
             Age = trait.Age.ToString();
             Name = trait.Name;
             Description = trait.Description;
-       }
+        }
 
         public string PartitionKey { get; set; }
         public string RowKey { get; set; }

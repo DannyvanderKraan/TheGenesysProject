@@ -2,7 +2,7 @@
 using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Models.Validations;
 using TheGenesysProject.Manager.Shared.Constants;
 
-namespace TheGenesysProject.Manager.API.Shared.Models
+namespace TheGenesysProject.Manager.API.Shared.Domain
 {
     internal abstract class DomainModelBase
     {
