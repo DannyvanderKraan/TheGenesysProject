@@ -24,9 +24,9 @@
   <ItemGroup>
     <Folder Include="AbilityMaintain\Application\Commands\" />
     <Folder Include="AbilityMaintain\Application\Queries\" />
-    <Folder Include="AbilityMaintain\Domain\Aggregates\" />
     <Folder Include="AbilityMaintain\Domain\Exceptions\" />
     <Folder Include="AbilityMaintain\Domain\Events\" />
     <Folder Include="AbilityMaintain\Domain\ValueObjects\" />
+    <Folder Include="Shared\Application\" />
   </ItemGroup>
 </Project>

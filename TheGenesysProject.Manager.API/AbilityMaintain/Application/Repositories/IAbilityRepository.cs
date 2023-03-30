@@ -3,7 +3,7 @@ using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Entities;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Application.Repositories
 {
-    internal interface IAbilityTableRepository
+    internal interface IAbilityRepository
     {
         Task Add(Ability ability);
     }

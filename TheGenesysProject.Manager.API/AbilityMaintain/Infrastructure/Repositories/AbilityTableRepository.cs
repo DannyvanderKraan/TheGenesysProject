@@ -1,13 +1,8 @@
 ﻿using Azure.Data.Tables;
 using Microsoft.Extensions.Azure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using TheGenesysProject.Manager.API.AbilityMaintain.Application.Repositories;
 using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Entities;
-using TheGenesysProject.Manager.API.AbilityMaintain.Repositories.Entities;
 using TheGenesysProject.Manager.API.Shared.Infrastructure;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories

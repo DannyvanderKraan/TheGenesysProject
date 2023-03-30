@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TheGenesysProject.Manager.API.AbilityMaintain.Models.Validations;
 using TheGenesysProject.Manager.API.Shared.Domain;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 

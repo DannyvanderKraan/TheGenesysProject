@@ -3,7 +3,7 @@ using TheGenesysProject.Manager.API.TraitMaintain.Domain.Entities;
 
 namespace TheGenesysProject.Manager.API.TraitMaintain.Application.Repositories
 {
-    internal interface ITraitTableRepository
+    internal interface ITraitRepository
     {
         Task Add(Trait trait);
     }

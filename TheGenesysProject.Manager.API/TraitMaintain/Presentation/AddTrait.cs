@@ -5,17 +5,17 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 using System.Web.Http;
+using TheGenesysProject.Manager.API.TraitMaintain.Application.Repositories;
 using TheGenesysProject.Manager.API.TraitMaintain.Models;
-using TheGenesysProject.Manager.API.TraitMaintain.Repositories;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
 namespace TheGenesysProject.Manager.API.TraitMaintain.Presentation
 {
     internal class AddTrait
     {
-        private readonly ITraitTableRepository _traitTableRepository;
+        private readonly ITraitRepository _traitTableRepository;
 
-        public AddTrait(ITraitTableRepository traitTableRepository)
+        public AddTrait(ITraitRepository traitTableRepository)
         {
             _traitTableRepository = traitTableRepository;
         }

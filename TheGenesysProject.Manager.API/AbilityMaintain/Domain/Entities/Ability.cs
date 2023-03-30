@@ -1,6 +1,5 @@
-﻿using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Models.Validations;
-using TheGenesysProject.Manager.API.AbilityMaintain.Models.Validations;
-using TheGenesysProject.Manager.API.Shared.Models;
+﻿using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Validations;
+using TheGenesysProject.Manager.API.Shared.Domain;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Domain.Entities

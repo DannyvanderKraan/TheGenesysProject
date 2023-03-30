@@ -1,9 +1,7 @@
 ﻿using Azure;
 using Azure.Data.Tables;
 using System;
-using System.ComponentModel;
 using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Entities;
-using TheGenesysProject.Manager.Shared.Constants;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories.Entities
 {
