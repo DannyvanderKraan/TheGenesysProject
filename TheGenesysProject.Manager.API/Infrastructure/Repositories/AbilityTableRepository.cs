@@ -1,15 +1,16 @@
 ﻿using Azure.Data.Tables;
 using Microsoft.Extensions.Azure;
 using System.Threading.Tasks;
-using TheGenesysProject.Manager.API.AbilityMaintain.Application.Repositories;
-using TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories.Entities.Entities;
+using TheGenesysProject.Manager.API.Application.Repositories;
+using TheGenesysProject.Manager.API.Domain.Entities;
 using TheGenesysProject.Manager.API.Infrastructure.Commons;
+using TheGenesysProject.Manager.API.Infrastructure.Repositories.Entities;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories
+namespace TheGenesysProject.Manager.API.Infrastructure.Repositories
 {
-    internal class TraitTableRepository : StorageTableRepositoryBase, IAbilityRepository
+    internal class AbilityTableRepository : StorageTableRepositoryBase, IAbilityRepository
     {
-        public TraitTableRepository(IAzureClientFactory<TableServiceClient> clientFactory) : base(clientFactory)
+        public AbilityTableRepository(IAzureClientFactory<TableServiceClient> clientFactory) : base(clientFactory)
         {
         }
 

@@ -4,7 +4,8 @@ using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories;
+using TheGenesysProject.Manager.API.Application.Repositories;
+using TheGenesysProject.Manager.API.Infrastructure.Repositories;
 using static TheGenesysProject.Manager.API.Application.Settings.AzureClientFactoryNames;
 using static TheGenesysProject.Manager.API.Application.Settings.ConnectionStringPaths;
 
@@ -45,7 +46,7 @@ namespace Bryder.PropertyInfoAggregate.EntriesBufferer
 
         private void AddRepositories(IServiceCollection services)
         {
-            services.AddSingleton<ITraitTableRepository, TraitTableRepository>();
+            services.AddSingleton<ITraitRepository, TraitTableRepository>();
          }
         private void AddServices(IServiceCollection services)
         {

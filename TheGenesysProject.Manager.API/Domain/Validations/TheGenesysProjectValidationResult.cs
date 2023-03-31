@@ -1,4 +1,4 @@
-﻿namespace TheGenesysProject.Manager.API.AbilityMaintain.Domain.Validations
+﻿namespace TheGenesysProject.Manager.API.Domain.Validations
 {
     internal class TheGenesysProjectValidationResult
     {

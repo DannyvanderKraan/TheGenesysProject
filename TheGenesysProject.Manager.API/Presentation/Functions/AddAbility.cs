@@ -5,19 +5,19 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 using System.Web.Http;
-using TheGenesysProject.Manager.API.AbilityMaintain.Models;
-using TheGenesysProject.Manager.API.AbilityMaintain.Repositories;
+using TheGenesysProject.Manager.API.Application.Repositories;
+using TheGenesysProject.Manager.API.Domain.Entities;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
 {
     internal class AddAbility
     {
-        private readonly IAbilityTableRepository _abilityTableRepository;
+        private readonly IAbilityRepository _abilityRepository;
 
-        public AddAbility(IAbilityTableRepository abilityTableRepository)
+        public AddAbility(IAbilityRepository abilityTableRepository)
         {
-            _abilityTableRepository = abilityTableRepository;
+            _abilityRepository = abilityTableRepository;
         }
 
         [FunctionName(nameof(AddAbility))]
@@ -29,7 +29,7 @@ namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
             {
                 var ability = new Ability(addAbility);
                 if (!ability.ValidationResult.IsValid) return new BadRequestObjectResult("Ability not valid");
-                await _abilityTableRepository.Add(ability).ConfigureAwait(false);
+                await _abilityRepository.Add(ability).ConfigureAwait(false);
                 return new OkObjectResult(ability.Id);
             }
             catch (Exception ex)

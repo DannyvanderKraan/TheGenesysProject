@@ -1,5 +1,5 @@
 ﻿using System;
-using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Validations;
+using TheGenesysProject.Manager.API.Domain.Validations;
 using TheGenesysProject.Manager.Shared.Constants;
 
 namespace TheGenesysProject.Manager.API.Domain.Commons

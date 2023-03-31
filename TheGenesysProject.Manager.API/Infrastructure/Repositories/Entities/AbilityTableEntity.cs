@@ -1,9 +1,9 @@
 ﻿using Azure;
 using Azure.Data.Tables;
 using System;
-using TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories.Entities.Entities;
+using TheGenesysProject.Manager.API.Domain.Entities;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories.Entities
+namespace TheGenesysProject.Manager.API.Infrastructure.Repositories.Entities
 {
     internal class AbilityTableEntity : ITableEntity
     {

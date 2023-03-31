@@ -1,8 +1,8 @@
-﻿using TheGenesysProject.Manager.API.AbilityMaintain.Domain.Validations;
-using TheGenesysProject.Manager.API.Domain.Commons;
+﻿using TheGenesysProject.Manager.API.Domain.Commons;
+using TheGenesysProject.Manager.API.Domain.Validations;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Domain.Entities
+namespace TheGenesysProject.Manager.API.Domain.Entities
 {
     internal class Ability : DomainModelBase
     {

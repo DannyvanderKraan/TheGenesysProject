@@ -5,19 +5,19 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 using System.Web.Http;
-using TheGenesysProject.Manager.API.AbilityMaintain.Application.Repositories;
-using TheGenesysProject.Manager.API.TraitMaintain.Models;
+using TheGenesysProject.Manager.API.Application.Repositories;
+using TheGenesysProject.Manager.API.Domain.Entities;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
 {
     internal class AddTrait
     {
-        private readonly ITraitRepository _traitTableRepository;
+        private readonly ITraitRepository _traitRepository;
 
-        public AddTrait(ITraitRepository traitTableRepository)
+        public AddTrait(ITraitRepository traitRepository)
         {
-            _traitTableRepository = traitTableRepository;
+            _traitRepository = traitRepository;
         }
 
         [FunctionName(nameof(AddTrait))]
@@ -29,7 +29,7 @@ namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
             {
                 var trait = new Trait(addTrait);
                 if (!trait.ValidationResult.IsValid) return new BadRequestObjectResult("Trait not valid");
-                await _traitTableRepository.Add(trait).ConfigureAwait(false);
+                await _traitRepository.Add(trait).ConfigureAwait(false);
                 return new OkObjectResult(trait.Id);
             }
             catch (Exception ex)

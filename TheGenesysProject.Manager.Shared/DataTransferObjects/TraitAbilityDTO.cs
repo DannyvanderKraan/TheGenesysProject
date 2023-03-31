@@ -8,7 +8,7 @@ namespace TheGenesysProject.Manager.Shared.DataTransferObjects
 {
     public class TraitAbilityDTO
     {
-        public string TraitId { get; set; }
-        public string AbilityId { get; set; }
+        public string TraitId { get; set; } = null!;
+        public string AbilityId { get; set; } = null!;
     }
 }

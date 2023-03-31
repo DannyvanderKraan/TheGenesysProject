@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using TheGenesysProject.Manager.API.AbilityMaintain.Infrastructure.Repositories.Entities.Entities;
+using TheGenesysProject.Manager.API.Domain.Entities;
 
-namespace TheGenesysProject.Manager.API.AbilityMaintain.Application.Repositories
+namespace TheGenesysProject.Manager.API.Application.Repositories
 {
     internal interface ITraitRepository
     {
