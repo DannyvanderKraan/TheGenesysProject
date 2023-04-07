@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheGenesysProject.Manager.API.Domain.Common.Models
+namespace TheGenesysProject.Manager.API.Domain.Commons.Models
 {
     internal abstract class ValueObject: IEquatable<ValueObject>
     {

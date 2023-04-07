@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TheGenesysProject.Manager.API.Domain.Ability.ValueObjects;
 
-namespace TheGenesysProject.Manager.API.Domain.Common.Models
+namespace TheGenesysProject.Manager.API.Domain.Commons.Models
 {
     internal interface ITypeIdentifier
     {

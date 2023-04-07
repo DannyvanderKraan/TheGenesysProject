@@ -2,7 +2,7 @@
 using TheGenesysProject.Manager.API.Domain.Validations;
 using TheGenesysProject.Manager.Shared.Constants;
 
-namespace TheGenesysProject.Manager.API.Domain.Common.Models
+namespace TheGenesysProject.Manager.API.Domain.Commons.Models
 {
     internal abstract class Entity<TId>: IEquatable<Entity<TId>> where TId : notnull 
     {

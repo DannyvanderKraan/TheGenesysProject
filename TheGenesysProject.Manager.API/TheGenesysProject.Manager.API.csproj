@@ -27,7 +27,7 @@
     <Folder Include="Domain\Ability\Entities\" />
     <Folder Include="Domain\Ability\Errors\" />
     <Folder Include="Domain\Ability\Events\" />
-    <Folder Include="Domain\Common\Errors\" />
+    <Folder Include="Domain\Commons\Errors\" />
     <Folder Include="Domain\Trait\Events\" />
     <Folder Include="Domain\Trait\Errors\" />
   </ItemGroup>

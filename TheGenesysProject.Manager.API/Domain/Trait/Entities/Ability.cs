@@ -1,4 +1,4 @@
-﻿using TheGenesysProject.Manager.API.Domain.Common.Models;
+﻿using TheGenesysProject.Manager.API.Domain.Commons.Models;
 using TheGenesysProject.Manager.API.Domain.Trait.ValueObjects;
 using TheGenesysProject.Manager.API.Domain.Validations;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;

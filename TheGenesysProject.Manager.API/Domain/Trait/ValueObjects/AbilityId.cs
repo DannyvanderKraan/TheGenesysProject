@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using TheGenesysProject.Manager.API.Domain.Common.Models;
+using TheGenesysProject.Manager.API.Domain.Commons.Models;
 
 namespace TheGenesysProject.Manager.API.Domain.Trait.ValueObjects
 {

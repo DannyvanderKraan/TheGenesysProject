@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
-using TheGenesysProject.Manager.API.Domain.Common.Models;
+using TheGenesysProject.Manager.API.Domain.Commons.Models;
 using TheGenesysProject.Manager.API.Domain.Trait.Entities;
 using TheGenesysProject.Manager.API.Domain.Trait.ValueObjects;
 using TheGenesysProject.Manager.API.Domain.Validations;

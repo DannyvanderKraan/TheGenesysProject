@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheGenesysProject.Manager.API.Domain.Common.Models
+namespace TheGenesysProject.Manager.API.Domain.Commons.Models
 {
     internal abstract class AggregateRoot<TId> : Entity<TId>
     {
