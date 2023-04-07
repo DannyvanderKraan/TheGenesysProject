@@ -1,7 +1,7 @@
 ﻿using Azure;
 using Azure.Data.Tables;
 using System;
-using TheGenesysProject.Manager.API.Domain.Entities;
+using TheGenesysProject.Manager.API.Domain.Trait;
 
 namespace TheGenesysProject.Manager.API.Infrastructure.Repositories.Entities
 {
@@ -31,7 +31,7 @@ namespace TheGenesysProject.Manager.API.Infrastructure.Repositories.Entities
 
         public static string CreateRowKey(Trait trait)
         {
-            return trait.Id;
+            return trait.Id.Value;
         }
     }
 }

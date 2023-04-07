@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -24,8 +24,11 @@
   <ItemGroup>
     <Folder Include="Application\Commands\" />
     <Folder Include="Application\Queries\" />
-    <Folder Include="Domain\Exceptions\" />
-    <Folder Include="Domain\Events\" />
-    <Folder Include="Domain\ValueObjects\" />
+    <Folder Include="Domain\Ability\Entities\" />
+    <Folder Include="Domain\Ability\Errors\" />
+    <Folder Include="Domain\Ability\Events\" />
+    <Folder Include="Domain\Common\Errors\" />
+    <Folder Include="Domain\Trait\Events\" />
+    <Folder Include="Domain\Trait\Errors\" />
   </ItemGroup>
 </Project>

@@ -6,7 +6,8 @@ using System;
 using System.Threading.Tasks;
 using System.Web.Http;
 using TheGenesysProject.Manager.API.Application.Repositories;
-using TheGenesysProject.Manager.API.Domain.Entities;
+using TheGenesysProject.Manager.API.Domain.Trait;
+using TheGenesysProject.Manager.API.Domain.Trait.Entities;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
@@ -27,7 +28,7 @@ namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
         {
             try
             {
-                var trait = new Trait(addTrait);
+                var trait = Trait.Create(addTrait);
                 if (!trait.ValidationResult.IsValid) return new BadRequestObjectResult("Trait not valid");
                 await _traitRepository.Add(trait).ConfigureAwait(false);
                 return new OkObjectResult(trait.Id);

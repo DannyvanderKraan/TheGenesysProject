@@ -6,7 +6,7 @@ using System;
 using System.Threading.Tasks;
 using System.Web.Http;
 using TheGenesysProject.Manager.API.Application.Repositories;
-using TheGenesysProject.Manager.API.Domain.Entities;
+using TheGenesysProject.Manager.API.Domain.Ability;
 using TheGenesysProject.Manager.Shared.DataTransferObjects;
 
 namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
@@ -27,7 +27,7 @@ namespace TheGenesysProject.Manager.API.AbilityMaintain.Presentation.Functions
         {
             try
             {
-                var ability = new Ability(addAbility);
+                var ability = Ability.Create(addAbility);
                 if (!ability.ValidationResult.IsValid) return new BadRequestObjectResult("Ability not valid");
                 await _abilityRepository.Add(ability).ConfigureAwait(false);
                 return new OkObjectResult(ability.Id);

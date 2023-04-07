@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGenesysProject.Manager.API", "TheGenesysProject.Manager.API\TheGenesysProject.Manager.API.csproj", "{E2CCEDB2-E28C-4C88-9848-ED4828431255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGenesysProject.Manager.API", "TheGenesysProject.Manager.API\TheGenesysProject.Manager.API.csproj", "{E2CCEDB2-E28C-4C88-9848-ED4828431255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGenesysProject.Manager.Shared", "TheGenesysProject.Manager.Shared\TheGenesysProject.Manager.Shared.csproj", "{6AD5CDE2-3FE5-407E-87E2-9DA3CD0370F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGenesysProject.Manager.Shared", "TheGenesysProject.Manager.Shared\TheGenesysProject.Manager.Shared.csproj", "{6AD5CDE2-3FE5-407E-87E2-9DA3CD0370F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

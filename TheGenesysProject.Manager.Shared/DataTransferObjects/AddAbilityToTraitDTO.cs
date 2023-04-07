@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace TheGenesysProject.Manager.Shared.DataTransferObjects
 {
-    public class TraitAbilityDTO
+    public class AddAbilityToTraitDTO
     {
         public string TraitId { get; set; } = null!;
         public string AbilityId { get; set; } = null!;
+        public string AbilityName { get; set; } = null!;
     }
 }

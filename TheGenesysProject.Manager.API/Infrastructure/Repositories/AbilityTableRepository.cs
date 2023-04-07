@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Azure;
 using System.Threading.Tasks;
 using TheGenesysProject.Manager.API.Application.Repositories;
-using TheGenesysProject.Manager.API.Domain.Entities;
+using TheGenesysProject.Manager.API.Domain.Ability;
 using TheGenesysProject.Manager.API.Infrastructure.Commons;
 using TheGenesysProject.Manager.API.Infrastructure.Repositories.Entities;
 

@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using TheGenesysProject.Manager.API.Domain.Entities;
+using TheGenesysProject.Manager.API.Domain.Trait;
 
 namespace TheGenesysProject.Manager.API.Application.Repositories
 {
