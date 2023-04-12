@@ -10,8 +10,16 @@ jobs:
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: Azure/cli@v1.0.7
+    - name: Build Bicep
+      # path to your checked-in .bicep file to deploy
+      run: bicep build ./TheGenesysProject.Manager.Deploy/Bicep/main.bicep
+    - uses: azure/arm-deploy@v1
       with:
-        # Specify the script here
-        inlineScript: az deployment sub create --template-file TheGenesysProject.Manager.Deploy/Bicep/main.bicep --location westeurope
-        # Azure CLI version to be used to execute the script. If not provided, latest version is used azcliversion: # optional, default is agentazcliversion
+        # set to your subscriptionId
+        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTIONID }}
+        # set to your resource group name
+        resourceGroupName: thegenesysproject2
+        # should match the .bicep file path but with .json extension
+        template: ./TheGenesysProject.Manager.Deploy/Bicep/main.json
+        # path to your checked-in parameters file to deploy
+        parameters: ./TheGenesysProject.Manager.Deploy/Bicep/main.parameters.json
