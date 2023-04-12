@@ -15,9 +15,7 @@ jobs:
       run: bicep build ./TheGenesysProject.Manager.Deploy/Bicep/main.bicep
     - uses: azure/arm-deploy@v1
       with:
-        # set to your subscriptionId
-        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTIONID }}
-        # set scope to subscription and make resource group name optional
+        # set scope to subscription and make resource group name optional (subscirptionid is set at az login)
         scope: subscription
         # should match the .bicep file path but with .json extension
         template: ./TheGenesysProject.Manager.Deploy/Bicep/main.json
