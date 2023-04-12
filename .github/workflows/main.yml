@@ -17,6 +17,7 @@ jobs:
       with:
         # set scope to subscription and make resource group name optional (subscirptionid is set at az login)
         scope: subscription
+        region: westeurope
         # should match the .bicep file path but with .json extension
         template: ./TheGenesysProject.Manager.Deploy/Bicep/main.json
         # path to your checked-in parameters file to deploy
