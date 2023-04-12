@@ -21,3 +21,4 @@ jobs:
         template: ./TheGenesysProject.Manager.Deploy/Bicep/main.json
         # path to your checked-in parameters file to deploy
         parameters: ./TheGenesysProject.Manager.Deploy/Bicep/main.parameters.json
+        failOnStdErr: false
